@@ -32,7 +32,7 @@ function obtenerSumaMaxima(arregloNumeros, tamVentana){
         console.log(`Numero que sale: ${numeroQueEntra}`)
 
     //Ajustamos la suma
-    sumaActualdeVentana = sumaActualdeVentana- - numeroQueSale + numeroQueEntra;
+    sumaActualdeVentana = sumaActualdeVentana - numeroQueSale + numeroQueEntra;
 
         console.log(`Nueva suma actual: ${sumaActualdeVentana}`)
 
