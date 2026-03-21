@@ -35,7 +35,8 @@ export const calcularCosto = ({
     subtotal += noches * costoNoche;
 
     const descuento = 
-    // Usando operador ternario = condicion ? valor si es true : valor si es false
+    // Usando operador ternario = 
+    // condicion ? valor si es true : valor si es false
     personas >= 5 ? 0.12 : // 12% de descuento
     personas >= 3 ? 0.7 : // 7% de descuento
     0; // sin descuento
@@ -47,4 +48,15 @@ export const calcularCosto = ({
     return Math.round(total);
 }
 
-// Me quede en minuto 46
+// Lo de abajo es lo mismo que de arriba pero lo de arriba es mas eficiente. 
+/*
+let descuento;
+
+if(personas >= 5){
+    descuento = 0.12;
+} else if (personas >= 3){
+    descuento = 0.07;
+} else {
+    descuento = 0;
+}
+*/
