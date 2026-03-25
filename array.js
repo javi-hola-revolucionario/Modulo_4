@@ -91,3 +91,55 @@ console.log(preciosNuevos);
 // El metodo every() es si todos cumplen 
 // El metodo sort() ordena (y normalmente muta)
 
+// El metodo reduce () sirve para reducir un arreglo a un solo valor. 
+const numeritos = [1,2,3,4,5];
+
+const suma = numeritos.reduce((acumulador, actual) => {
+    return acumulador + actual;
+}, 0 );
+
+console.log(suma);
+
+// EJEMPLO: suma de un carrito
+const carrito = [
+    {producto: 'camisa', precio: 20},
+    {producto: 'pantalon', precio: 40},
+    {producto: 'zapatos', precio: 60},
+];
+
+const total = carrito.reduce((acc, item) => {
+    return acc + item.precio;
+},0);
+console.log(total);
+
+// Uso de Splice
+let frutilla = ["manzana", "pera", "platano", "uva"];
+console.log("Arreglo original: ");
+console.log(frutilla);
+
+// Usamos splice para eliminar un elemento
+// splice(posicionInicio, cantidadAEliminar)
+
+// En este caso: 
+// posicion 1 = "pera"
+// cantidad a eliminar = 1
+frutilla.splice(1,1);
+
+// Mostramos el arreglo despues de usar splice
+console.log("Arreglo despues de usar splice:");
+console.log(frutilla);
+
+// Arreglos de objetos
+const estudiantes = [
+    { nombre: "Javier", edad: 20, curso: "Desarrollo Web"},
+    { nombre: "Maria", edad: 19, curso: "Data Science"},
+    { nombre: "Carlos", edad: 28, curso: "Desarrollo Web"},
+    { nombre: "Ana", edad: 21, curso: "Data Science"},
+    { nombre: "Luis", edad: 18, curso: "Desarrollo Web"},
+];
+
+console.log(estudiantes[0].nombre);
+
+// Buscar estudiante de mayor edad
+const mayor = estudiantes.find(est => est.edad >21);
+console.log(mayor);
