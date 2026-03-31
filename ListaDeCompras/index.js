@@ -27,3 +27,24 @@ const eliminarProducto = (producto) => {
         console.log(`El producto "${producto}" no se encuentra en la lista!`);
     }
 };
+
+// Funcion para mostrar productos de la lista
+const mostrarProducto = (producto) => {
+    console.log('Esta es la lista de compras: ');
+    if (listaDeCompras.length === 0) {
+        console.log('No hay nada en la lista')
+        return; 
+    } 
+    listaDeCompras.forEach((producto, index) => {
+    console.log(`${index +1}. ${producto} `); 
+});
+}
+
+// Ejemplo de lista en uso
+agregarProducto('jabon')
+agregarProducto('jabon')
+agregarProducto('elote')
+agregarProducto('palomitas')
+agregarProducto('celular')
+eliminarProducto('elote')
+mostrarProducto();
