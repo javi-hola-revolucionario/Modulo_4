@@ -142,4 +142,5 @@ console.log(estudiantes[0].nombre);
 
 // Buscar estudiante de mayor edad
 const mayor = estudiantes.find(est => est.edad >21);
+console.log("Las personas mayores son:")
 console.log(mayor);
