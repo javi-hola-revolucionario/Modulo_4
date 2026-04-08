@@ -1,0 +1,2 @@
+Hola, este es un archivo de prueba
+Estamos aprendiendo manejo de archivos con Node.js
